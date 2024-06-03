@@ -1,0 +1,136 @@
+@import './../generales/colores';
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+@font-face {
+    font-family: 'Reddit Mono';
+    font-display: auto;    
+    font-weight: normal;
+    font-style: normal;
+}
+
+.weather {    
+    ul {
+        flex-direction: row;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+
+    /** HEADER WEATHER APP **/
+    .weather-app {
+        padding: 13px 25px;
+        
+        /** HEADER **/
+        .weather-cab {
+            display: flex;
+            justify-content: space-between;
+            
+            li {
+                padding: 0 3px;
+                &:first-child {
+                    padding: 0;
+                }
+            }
+
+            .degree-head {
+                font-family: 'Reddit Mono';
+                color: $negro;
+                display: flex;
+                flex-direction: row;
+                font-size: 3rem;
+                font-weight: 500;
+                line-height: 1.2;
+
+                .CorF {
+                    color: $negro-50;
+                    display: inline-block;
+                    font-size: 1rem;
+                    line-height: 1;
+                    margin: 10px 0;
+                    position: relative;
+
+                    li {
+                        padding: 0 4px;
+                        &:first-child::before {
+                            content: '|';
+                            display: block;
+                            position: absolute;
+                            left: calc(50% - 1px);
+                            top: -1px;
+                        }
+                    }                    
+                }
+            }
+
+            .data-weather {
+                color: $negro-50;
+                flex-direction: column;
+                font-size: 0.75rem;
+                line-height: 1.3;
+                margin: 8px 0 0 0px;
+
+                li {
+                    padding: 0;
+                }
+            }
+
+            .head-weather {
+                align-items: flex-end;
+                flex-direction: column;
+
+                li {
+                    color: $negro-50;
+                    line-height: 1.2;
+                    font-size: 0.975rem;
+                    padding: 0;
+                    h1 {
+                        color: $negro;
+                        font-size: 1.375rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        
+        /** BODY WEATHER APP **/
+        .tab-content {
+            margin-top: 20px;
+            width: 100%;
+
+            .data-daily {
+                justify-content: space-around;
+            }
+
+            li {cursor: pointer;}
+
+            .weather-group{
+                background-color: $blanco;
+                border-radius: 6px;
+                line-height: 1.2;
+                margin-top: 14px;
+                padding: 8px 6px;
+                transition: all .3s;
+
+                p:first-child {
+                    color: $negro;
+                    font-size: medium;
+                    font-weight: 500;
+                }
+
+                span {
+                    color: $negro-50;
+                    margin: 0 2px;
+                    &:first-child {
+                        color: $negro;
+                    }
+                }
+            }
+
+            .active .weather-group {
+                background-color: $negro-5;
+            }
+        }
+
+    }
+
+
+}
+

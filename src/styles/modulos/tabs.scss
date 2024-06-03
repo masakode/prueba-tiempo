@@ -1,0 +1,71 @@
+@import './../generales/colores';
+.container {
+    align-items: flex-start;
+    display: flex;  
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+}
+.tabs {
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    position: relative;
+
+    li {
+        align-items: center;
+        color: $negro-50;
+        cursor: pointer;
+        display: flex;
+        font-size: 0.875rem;
+        font-weight: normal;
+        justify-content: flex-start;
+        padding-bottom: 10px;
+        position: relative;
+        z-index: 2;
+
+        &::before {
+            border-bottom: 3px solid $naranja;
+            bottom: 0;
+            content: "";
+            display: block;
+            position: absolute;
+            transition: all .3s;
+            width: 0;
+        }
+
+        &.active {
+            color: $negro;
+        }
+
+        &.active::before {
+           width: 100%;
+        }
+
+        &:nth-of-type(even)::after {
+            color: $negro-20;
+            content: " | ";
+            display: block;
+            line-height: 1;
+            position: relative;
+            text-align: center;
+            vertical-align: middle;
+            width: 22px;
+        }
+    }
+}
+.box-NoData {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    
+    .typing {
+        animation: typing 5s steps(35), transparent .5s step-end infinite alternate;
+        font-weight: 100;
+        overflow: hidden;
+        width: 80%;
+        white-space: nowrap;
+        
+    }
+}

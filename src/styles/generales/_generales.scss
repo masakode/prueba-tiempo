@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/*
+    === ESTRUCTURA ===
+    1. General.
+    2. Cajas.
+    3. Encabezados.
+    4. Texto.
+    5. Botones y links.
+*/
+
+/**** VARIABLES ****/
+$flex: flex;
+
+/**** 1. GENERAL ****/
+
+@font-face {
+    font-family: 'Open Sans';
+    font-display: auto;    
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p {
+    display: block;
+    width: 100%;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+}
+ul li, ol li {
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/**** 2. CAJAS ****/
+.box_695 {
+    width: 43.438rem;
+}
+
+/**** 4. TEXTOS ****/
+.oblicuo {
+    font-style: oblique;
+}

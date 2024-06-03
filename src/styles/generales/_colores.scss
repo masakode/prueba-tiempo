@@ -1,0 +1,12 @@
+$azul: 	#8acdeb;
+$azul-10: rgba($azul, .1);
+$blanco: #ffffff;
+$naranja: #fbbc04;
+$negro: #202124;
+$negro-50: rgba($negro, .5);
+$negro-20: rgba($negro, .2);
+$negro-10: rgba($negro, .1);
+$negro-5: rgba($negro, .05);
+
+.bg-azul-10 {background-color: $azul-10;}
+.bg-negro-5 {background-color: $negro-5;}
